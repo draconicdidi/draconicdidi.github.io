@@ -3,217 +3,345 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elias Hubbard — Content Writer & SEO Strategist</title>
+<title>Elias Hubbard — AI Content Strategist</title>
+<meta name="description" content="AI Content Strategist helping B2B and SaaS brands produce 3–5x more content at half the agency cost. Austin, TX. From $5,000/month.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0f0e0c;--paper:#f5f2ec;--accent:#c8440f;--muted:#7a7368;--border:#ddd9d0;--card:#eeebe3}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);font-size:16px;line-height:1.7;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:20px 48px;background:rgba(245,242,236,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav-logo{font-family:'DM Serif Display',serif;font-size:20px;color:var(--ink);text-decoration:none}
-.nav-links{display:flex;gap:32px;list-style:none}
-.nav-links a{font-size:14px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .2s}
-.nav-links a:hover{color:var(--ink)}
-.nav-cta{font-size:13px;font-weight:500;padding:9px 20px;background:var(--accent);color:#fff;border-radius:4px;text-decoration:none;transition:opacity .2s}
-.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 48px 80px;gap:80px;max-width:1200px;margin:0 auto}
-.hero-label{font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;display:flex;align-items:center;gap:10px}
-.hero-label::before{content:'';display:block;width:32px;height:1px;background:var(--accent)}
-h1{font-family:'DM Serif Display',serif;font-size:clamp(42px,5vw,68px);line-height:1.08;letter-spacing:-.02em;margin-bottom:24px}
-h1 em{font-style:italic;color:var(--accent)}
-.hero-sub{font-size:18px;font-weight:300;color:var(--muted);line-height:1.6;margin-bottom:40px;max-width:460px}
-.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
-.btn-primary{display:inline-block;padding:14px 32px;background:var(--ink);color:var(--paper);font-size:14px;font-weight:500;text-decoration:none;border-radius:4px;transition:background .2s}
-.btn-primary:hover{background:var(--accent)}
-.btn-secondary{display:inline-block;padding:14px 32px;border:1.5px solid var(--border);color:var(--ink);font-size:14px;font-weight:500;text-decoration:none;border-radius:4px}
-.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:2px;border:1px solid var(--border);border-radius:8px;overflow:hidden}
-.stat-box{background:var(--card);padding:32px 28px;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
-.stat-box:nth-child(even){border-right:none}
-.stat-box:nth-child(3),.stat-box:nth-child(4){border-bottom:none}
-.stat-num{font-family:'DM Serif Display',serif;font-size:44px;line-height:1;color:var(--ink);margin-bottom:6px}
-.stat-num span{font-size:28px;color:var(--accent)}
-.stat-desc{font-size:13px;color:var(--muted)}
-.marquee-wrap{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:14px 0;overflow:hidden;white-space:nowrap;background:var(--card)}
-.marquee-track{display:inline-flex;animation:marquee 28s linear infinite}
-.marquee-item{display:inline-flex;align-items:center;gap:16px;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:0 40px}
-.marquee-item::after{content:'·';color:var(--accent);font-size:20px}
-@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-section{padding:100px 48px;max-width:1200px;margin:0 auto}
-.section-tag{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
-h2{font-family:'DM Serif Display',serif;font-size:clamp(32px,4vw,48px);line-height:1.1;letter-spacing:-.02em;margin-bottom:16px}
-.section-lead{font-size:18px;color:var(--muted);font-weight:300;max-width:560px;margin-bottom:56px}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
-.service-card{background:var(--card);padding:36px 32px;border:1px solid var(--border);transition:background .2s}
-.service-card:hover{background:var(--ink)}
-.service-card:hover .service-title,.service-card:hover .service-desc,.service-card:hover .service-price{color:var(--paper)}
-.service-border{width:32px;height:2px;background:var(--accent);margin-bottom:24px}
-.service-num{font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.1em;margin-bottom:12px}
-.service-title{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:12px;color:var(--ink);transition:color .2s}
-.service-desc{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:20px;transition:color .2s}
-.service-price{font-size:13px;font-weight:500;color:var(--accent);transition:color .2s}
-.samples-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.sample-card{background:var(--card);border:1px solid var(--border);border-radius:6px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s;display:block}
-.sample-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08)}
-.sample-thumb{height:160px;display:flex;align-items:center;justify-content:center;font-family:'DM Serif Display',serif;font-size:48px;color:rgba(255,255,255,.4)}
-.sample-body{padding:24px 28px 28px}
-.sample-tag{display:inline-block;font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:20px;background:var(--border);color:var(--muted);margin-bottom:10px}
-.sample-title{font-size:17px;font-weight:500;line-height:1.4;margin-bottom:8px}
-.sample-meta{font-size:13px;color:var(--muted)}
-.process-steps{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border)}
-.process-step{padding:36px 28px;border-right:1px solid var(--border)}
-.process-step:last-child{border-right:none}
-.process-num{font-family:'DM Serif Display',serif;font-size:56px;line-height:1;color:var(--border);margin-bottom:20px}
-.process-title{font-size:16px;font-weight:500;margin-bottom:8px}
-.process-desc{font-size:14px;color:var(--muted);line-height:1.6}
-.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.pricing-card{border:1.5px solid var(--border);border-radius:8px;padding:36px 32px;position:relative;transition:border-color .2s}
-.pricing-card:hover{border-color:var(--ink)}
-.pricing-card.featured{border-color:var(--accent);background:var(--ink);color:var(--paper)}
-.pricing-badge{position:absolute;top:-12px;left:32px;background:var(--accent);color:#fff;font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px}
-.pricing-tier{font-size:13px;font-weight:500;color:var(--muted);margin-bottom:12px;letter-spacing:.06em;text-transform:uppercase}
-.pricing-card.featured .pricing-tier{color:rgba(255,255,255,.5)}
-.pricing-price{font-family:'DM Serif Display',serif;font-size:48px;line-height:1;margin-bottom:4px;color:var(--ink)}
-.pricing-card.featured .pricing-price{color:var(--paper)}
-.pricing-unit{font-size:14px;color:var(--muted);margin-bottom:28px}
-.pricing-card.featured .pricing-unit{color:rgba(255,255,255,.5)}
-.pricing-features{list-style:none;margin-bottom:32px}
-.pricing-features li{font-size:14px;padding:9px 0;border-bottom:1px solid var(--border);color:var(--muted);display:flex;align-items:flex-start;gap:10px}
-.pricing-card.featured .pricing-features li{border-bottom-color:rgba(255,255,255,.1);color:rgba(255,255,255,.75)}
-.pricing-features li::before{content:'→';color:var(--accent);flex-shrink:0;font-size:13px}
-.btn-pricing{display:block;text-align:center;padding:13px;border:1.5px solid var(--ink);color:var(--ink);font-size:14px;font-weight:500;text-decoration:none;border-radius:4px;transition:all .2s}
-.btn-pricing:hover{background:var(--ink);color:var(--paper)}
-.pricing-card.featured .btn-pricing{border-color:var(--accent);background:var(--accent);color:#fff}
-.testimonials{background:var(--ink);color:var(--paper);padding:100px 48px}
-.testimonials-inner{max-width:1200px;margin:0 auto}
-.testimonials h2,.cta-strip h2{color:var(--paper)}
-.testimonials .section-tag,.cta-strip .section-tag{color:var(--accent)}
-.testimonials .section-lead{color:rgba(255,255,255,.5)}
-.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.testimonial-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:32px 28px}
-.testimonial-quote{font-size:15px;line-height:1.7;color:rgba(255,255,255,.8);margin-bottom:24px;font-family:'DM Serif Display',serif;font-style:italic}
-.testimonial-author{display:flex;align-items:center;gap:12px}
-.author-avatar{width:38px;height:38px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;color:#fff;flex-shrink:0}
-.author-name{font-size:14px;font-weight:500;color:var(--paper)}
-.author-role{font-size:12px;color:rgba(255,255,255,.4)}
-.cta-strip{background:var(--accent);color:#fff;padding:80px 48px;text-align:center}
-.cta-strip h2{color:#fff;margin-bottom:16px}
-.cta-strip p{font-size:18px;color:rgba(255,255,255,.75);margin-bottom:40px;font-weight:300}
-.btn-white{display:inline-block;padding:16px 40px;background:#fff;color:var(--accent);font-size:15px;font-weight:500;text-decoration:none;border-radius:4px}
-footer{padding:48px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);max-width:1200px;margin:0 auto}
-.footer-name{font-family:'DM Serif Display',serif;font-size:18px}
-.footer-links{display:flex;gap:24px}
-.footer-links a{font-size:13px;color:var(--muted);text-decoration:none}
-.fade-in{opacity:0;transform:translateY(24px);animation:fadeIn .7s ease forwards}
-@keyframes fadeIn{to{opacity:1;transform:none}}
-.fade-in:nth-child(1){animation-delay:.1s}.fade-in:nth-child(2){animation-delay:.2s}.fade-in:nth-child(3){animation-delay:.3s}
-@media(max-width:900px){nav{padding:16px 24px}.nav-links{display:none}.hero{grid-template-columns:1fr;padding:100px 24px 60px;gap:48px}section{padding:64px 24px}.services-grid,.pricing-grid,.process-steps,.testimonials-grid,.samples-grid{grid-template-columns:1fr}.process-step{border-right:none;border-bottom:1px solid var(--border)}.testimonials,.cta-strip{padding:64px 24px}footer{flex-direction:column;gap:20px;padding:32px 24px}}
-</style></head>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0B1120;
+    --navy-mid: #111827;
+    --navy-card: #161F30;
+    --navy-border: #1E2D45;
+    --gold: #C9A84C;
+    --gold-light: #E8C97A;
+    --gold-dim: rgba(201,168,76,0.15);
+    --white: #F5F0E8;
+    --white-dim: rgba(245,240,232,0.6);
+    --white-faint: rgba(245,240,232,0.12);
+    --red-soft: #FF6B6B;
+    --green-soft: #4ADE80;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'Instrument Sans', system-ui, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--navy);
+    color: var(--white);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--gold); text-decoration: none; }
+  a:hover { color: var(--gold-light); }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.25rem 2.5rem;
+    border-bottom: 1px solid var(--navy-border);
+    background: rgba(11,17,32,0.92);
+    backdrop-filter: blur(12px);
+  }
+  .nav-logo { font-family: var(--serif); font-size: 1.1rem; color: var(--white); letter-spacing: 0.02em; }
+  .nav-links { display: flex; gap: 2rem; align-items: center; }
+  .nav-links a { color: var(--white-dim); font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--white); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.5rem 1.25rem; border-radius: 3px; font-weight: 600; font-size: 0.875rem; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+
+  section { padding: 7rem 0; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 2.5rem; }
+
+  #hero { min-height: 100vh; display: flex; align-items: center; padding-top: 5rem; position: relative; overflow: hidden; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; width: 100%; }
+  .hero-eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--gold-dim); border: 1px solid rgba(201,168,76,0.3); color: var(--gold); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.4rem 0.9rem; border-radius: 2px; margin-bottom: 1.5rem; }
+  .hero-eyebrow::before { content: ""; display: block; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; }
+  h1 { font-family: var(--serif); font-size: clamp(2.4rem, 4vw, 3.5rem); line-height: 1.18; color: var(--white); margin-bottom: 1.5rem; }
+  h1 em { font-style: italic; color: var(--gold); }
+  .hero-sub { font-size: 1.05rem; color: var(--white-dim); max-width: 460px; margin-bottom: 2.5rem; line-height: 1.8; }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary { background: var(--gold); color: var(--navy); padding: 0.9rem 2rem; border-radius: 3px; font-weight: 600; font-size: 0.95rem; transition: background 0.2s, transform 0.15s; display: inline-block; }
+  .btn-primary:hover { background: var(--gold-light); color: var(--navy); transform: translateY(-1px); }
+  .btn-ghost { border: 1px solid var(--navy-border); color: var(--white-dim); padding: 0.9rem 2rem; border-radius: 3px; font-size: 0.95rem; transition: border-color 0.2s, color 0.2s; display: inline-block; }
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .stat-card { background: var(--navy-card); border: 1px solid var(--navy-border); border-radius: 4px; padding: 1.5rem; transition: border-color 0.2s; }
+  .stat-card:hover { border-color: rgba(201,168,76,0.3); }
+  .stat-num { font-family: var(--serif); font-size: 2.2rem; color: var(--gold); display: block; line-height: 1; margin-bottom: 0.3rem; }
+  .stat-label { font-size: 0.82rem; color: var(--white-dim); line-height: 1.4; }
+
+  .alert-bar { background: rgba(201,168,76,0.08); border-top: 1px solid rgba(201,168,76,0.2); border-bottom: 1px solid rgba(201,168,76,0.2); padding: 1.25rem 0; }
+  .alert-bar .container { display: flex; align-items: center; gap: 1rem; }
+  .alert-icon { font-size: 1.2rem; flex-shrink: 0; }
+  .alert-text { font-size: 0.92rem; color: var(--white-dim); }
+  .alert-text strong { color: var(--gold); }
+
+  .section-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
+  h2 { font-family: var(--serif); font-size: clamp(1.9rem, 3vw, 2.6rem); line-height: 1.25; color: var(--white); margin-bottom: 1rem; }
+  h2 em { font-style: italic; color: var(--gold); }
+  .section-intro { font-size: 1rem; color: var(--white-dim); max-width: 560px; line-height: 1.8; }
+
+  .comparison-wrap { margin-top: 3rem; overflow-x: auto; }
+  .comparison-table { width: 100%; border-collapse: collapse; min-width: 620px; }
+  .comparison-table th { padding: 1rem 1.25rem; text-align: left; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; border-bottom: 1px solid var(--navy-border); }
+  .comparison-table th:first-child { color: var(--white-dim); }
+  .comparison-table th.col-agency { color: #FF9999; }
+  .comparison-table th.col-hire { color: #FFCC66; }
+  .comparison-table th.col-elias { color: var(--gold); position: relative; }
+  .comparison-table th.col-elias::after { content: "← best"; font-size: 0.68rem; color: var(--gold); opacity: 0.6; margin-left: 0.5rem; }
+  .comparison-table td { padding: 0.9rem 1.25rem; font-size: 0.92rem; border-bottom: 1px solid rgba(255,255,255,0.04); vertical-align: middle; }
+  .comparison-table tr:last-child td { border-bottom: none; }
+  .comparison-table td:first-child { color: var(--white-dim); font-weight: 500; }
+  .comparison-table td.bad { color: #FF9999; }
+  .comparison-table td.warn { color: #FFCC66; }
+  .comparison-table td.good { color: var(--green-soft); font-weight: 500; }
+  .comparison-table tr:hover td { background: var(--white-faint); }
+
+  #included { background: var(--navy-mid); }
+  .price-hero { text-align: center; margin-bottom: 3rem; }
+  .price-tag { font-family: var(--serif); font-size: 4rem; color: var(--gold); display: block; line-height: 1; }
+  .price-sub { color: var(--white-dim); font-size: 0.9rem; margin-top: 0.4rem; }
+  .deliverables-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1px; background: var(--navy-border); border: 1px solid var(--navy-border); border-radius: 4px; overflow: hidden; margin-bottom: 2rem; }
+  .deliverable { background: var(--navy-card); padding: 1.5rem; display: flex; gap: 1rem; align-items: flex-start; transition: background 0.2s; }
+  .deliverable:hover { background: #1A2438; }
+  .del-icon { width: 36px; height: 36px; flex-shrink: 0; background: var(--gold-dim); border-radius: 3px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: var(--gold); font-family: var(--serif); }
+  .del-title { font-weight: 600; font-size: 0.92rem; margin-bottom: 0.2rem; }
+  .del-desc { font-size: 0.82rem; color: var(--white-dim); line-height: 1.5; }
+
+  .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .step { position: relative; }
+  .step-num { font-family: var(--serif); font-size: 3rem; color: rgba(201,168,76,0.2); line-height: 1; margin-bottom: 0.75rem; }
+  .step-title { font-weight: 600; margin-bottom: 0.4rem; font-size: 0.95rem; }
+  .step-desc { font-size: 0.85rem; color: var(--white-dim); line-height: 1.6; }
+  .step:not(:last-child)::after { content: ""; position: absolute; top: 1.4rem; right: -0.75rem; width: 1.5rem; height: 1px; background: var(--navy-border); }
+
+  #testimonials { background: var(--navy-mid); }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .testimonial { background: var(--navy-card); border: 1px solid var(--navy-border); border-radius: 4px; padding: 1.75rem; }
+  .testimonial-stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 1rem; letter-spacing: 0.1em; }
+  .testimonial-text { font-size: 0.92rem; color: var(--white-dim); line-height: 1.75; margin-bottom: 1.25rem; font-style: italic; }
+  .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
+  .author-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--gold-dim); border: 1px solid rgba(201,168,76,0.3); display: flex; align-items: center; justify-content: center; font-size: 0.78rem; font-weight: 600; color: var(--gold); }
+  .author-name { font-size: 0.85rem; font-weight: 600; }
+  .author-role { font-size: 0.78rem; color: var(--white-dim); }
+
+  .samples-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .sample-card { background: var(--navy-card); border: 1px solid var(--navy-border); border-radius: 4px; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; transition: border-color 0.2s, transform 0.15s; }
+  .sample-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-2px); }
+  .sample-tag { display: inline-block; background: var(--gold-dim); color: var(--gold); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: 2px; width: fit-content; }
+  .sample-title { font-weight: 600; font-size: 0.95rem; line-height: 1.4; color: var(--white); }
+  .sample-meta { font-size: 0.8rem; color: var(--white-dim); }
+
+  #contact { background: linear-gradient(135deg, var(--navy-card) 0%, #0B1120 100%); border-top: 1px solid var(--navy-border); text-align: center; }
+  .contact-inner { max-width: 640px; margin: 0 auto; }
+  .contact-note { font-size: 0.82rem; color: var(--white-dim); margin-top: 1rem; }
+
+  footer { border-top: 1px solid var(--navy-border); padding: 2rem 0; }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-name { font-family: var(--serif); font-size: 0.95rem; }
+  .footer-links { display: flex; gap: 1.5rem; }
+  .footer-links a { font-size: 0.82rem; color: var(--white-dim); }
+  .footer-links a:hover { color: var(--gold); }
+
+  .bg-deco { position: absolute; width: 500px; height: 500px; background: radial-gradient(ellipse at center, rgba(201,168,76,0.06) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+  .bg-deco-1 { top: -100px; right: -100px; }
+  .bg-deco-2 { bottom: -100px; left: -100px; }
+  .divider { height: 1px; background: var(--navy-border); margin: 0; }
+
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.25rem; }
+    .nav-links { display: none; }
+    .hero-grid { grid-template-columns: 1fr; gap: 3rem; padding-top: 2rem; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .process-steps { grid-template-columns: repeat(2, 1fr); }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .samples-grid { grid-template-columns: 1fr; }
+    .comparison-table th, .comparison-table td { padding: 0.7rem 0.75rem; }
+    .step:not(:last-child)::after { display: none; }
+    .footer-inner { flex-direction: column; text-align: center; }
+  }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-content > * { animation: fadeUp 0.6s ease both; }
+  .hero-content > *:nth-child(1) { animation-delay: 0.1s; }
+  .hero-content > *:nth-child(2) { animation-delay: 0.2s; }
+  .hero-content > *:nth-child(3) { animation-delay: 0.3s; }
+  .hero-content > *:nth-child(4) { animation-delay: 0.4s; }
+  .hero-stats { animation: fadeUp 0.6s ease 0.45s both; }
+</style>
+</head>
 <body>
+
 <nav>
-  <a href="#" class="nav-logo">Elias Hubbard</a>
-  <ul class="nav-links">
-    <li><a href="#services">Services</a></li><li><a href="#samples">Samples</a></li>
-    <li><a href="#pricing">Pricing</a></li><li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="https://www.upwork.com/freelancers/~draconicdidi" class="nav-cta" target="_blank">Hire on Upwork →</a>
+  <div class="nav-logo">Elias Hubbard</div>
+  <div class="nav-links">
+    <a href="#comparison">Why Me</a>
+    <a href="#included">Retainer</a>
+    <a href="#work">Work</a>
+    <a href="#testimonials">Clients</a>
+    <a href="mailto:draconicdidi@gmail.com" class="nav-cta">Get in touch →</a>
+  </div>
 </nav>
-<div class="hero">
-  <div>
-    <div class="hero-label fade-in">Content Writer & SEO Strategist</div>
-    <h1 class="fade-in">Content that <em>ranks,</em> reads, and converts.</h1>
-    <p class="hero-sub fade-in">I write long-form SEO content, blog articles, and brand copy for home services businesses, agencies, and B2B SaaS companies. Fast turnaround. Clean briefs. No hand-holding required.</p>
-    <div class="hero-actions fade-in">
-      <a href="https://www.upwork.com/freelancers/~draconicdidi" class="btn-primary" target="_blank">Work with me</a>
-      <a href="#samples" class="btn-secondary">See writing samples</a>
+
+<section id="hero">
+  <div class="bg-deco bg-deco-1"></div>
+  <div class="bg-deco bg-deco-2"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow">AI Content Strategist · Austin, TX</div>
+        <h1>Content that ranks,<br><em>scales,</em> and converts.</h1>
+        <p class="hero-sub">I help B2B and SaaS brands produce 3–5× more content at half the cost of a traditional agency — without hiring a full team or locking into a 6-month contract.</p>
+        <div class="hero-actions">
+          <a href="mailto:draconicdidi@gmail.com" class="btn-primary">Book a free strategy call →</a>
+          <a href="#work" class="btn-ghost">See my work</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card"><span class="stat-num">3–5×</span><span class="stat-label">More content than your current output, monthly</span></div>
+        <div class="stat-card"><span class="stat-num">50%</span><span class="stat-label">Less than a traditional agency retainer</span></div>
+        <div class="stat-card"><span class="stat-num">24h</span><span class="stat-label">Average turnaround on 1,500-word articles</span></div>
+        <div class="stat-card"><span class="stat-num">0</span><span class="stat-label">Missed deadlines. Every brief, every time.</span></div>
+      </div>
     </div>
   </div>
-  <div class="hero-stats fade-in">
-    <div class="stat-box"><div class="stat-num">50<span>+</span></div><div class="stat-desc">Articles & pages delivered</div></div>
-    <div class="stat-box"><div class="stat-num">24<span>h</span></div><div class="stat-desc">Average turnaround on 1,500-word articles</div></div>
-    <div class="stat-box"><div class="stat-num">3<span>x</span></div><div class="stat-desc">Core niches: home services, SaaS, e-commerce</div></div>
-    <div class="stat-box"><div class="stat-num">0</div><div class="stat-desc">Missed deadlines</div></div>
+</section>
+
+<div class="alert-bar">
+  <div class="container">
+    <span class="alert-icon">⚡</span>
+    <p class="alert-text">Top B2B content agencies charge <strong>$10,000–$22,000/month</strong>. I deliver the same output for <strong>$5,000/month</strong> — with no account managers, no markups, and no long-term lock-in.</p>
   </div>
 </div>
-<div class="marquee-wrap"><div class="marquee-track">
-  <span class="marquee-item">SEO Blog Writing</span><span class="marquee-item">Home Services Content</span>
-  <span class="marquee-item">Long-Form Articles</span><span class="marquee-item">Website Copywriting</span>
-  <span class="marquee-item">B2B Content Strategy</span><span class="marquee-item">Ghostwriting</span>
-  <span class="marquee-item">Email Campaigns</span><span class="marquee-item">SEO Blog Writing</span>
-  <span class="marquee-item">Home Services Content</span><span class="marquee-item">Long-Form Articles</span>
-  <span class="marquee-item">Website Copywriting</span><span class="marquee-item">B2B Content Strategy</span>
-  <span class="marquee-item">Ghostwriting</span><span class="marquee-item">Email Campaigns</span>
-</div></div>
-<section id="services">
-  <div class="section-tag">What I do</div>
-  <h2>Services built for businesses that need results</h2>
-  <p class="section-lead">Not fluff. Not filler. Content engineered to rank, convert, and sound like you actually know your craft.</p>
-  <div class="services-grid">
-    <div class="service-card"><div class="service-num">01</div><div class="service-border"></div><div class="service-title">SEO Blog Writing</div><div class="service-desc">Research-backed long-form articles targeting high-intent queries. Built to rank and stay ranked — not to spike and fade.</div><div class="service-price">From $75 / article</div></div>
-    <div class="service-card"><div class="service-num">02</div><div class="service-border"></div><div class="service-title">Website Copywriting</div><div class="service-desc">Home pages, service pages, landing pages that communicate what you do, why it matters, and what the reader should do next.</div><div class="service-price">From $150 / page</div></div>
-    <div class="service-card"><div class="service-num">03</div><div class="service-border"></div><div class="service-title">Content Strategy</div><div class="service-desc">A full content plan — topic clusters, keyword targets, publishing cadence, and internal linking architecture.</div><div class="service-price">From $350 / strategy</div></div>
-    <div class="service-card"><div class="service-num">04</div><div class="service-border"></div><div class="service-title">Ghostwriting</div><div class="service-desc">Your ideas, your voice, zero of your time. Voice note or bullet points in — polished thought leadership out.</div><div class="service-price">From $100 / piece</div></div>
-    <div class="service-card"><div class="service-num">05</div><div class="service-border"></div><div class="service-title">Retainer Packages</div><div class="service-desc">Ongoing content partnership. Fixed monthly deliverables, predictable costs, a writer who knows your brand inside-out.</div><div class="service-price">From $500 / month</div></div>
-    <div class="service-card"><div class="service-num">06</div><div class="service-border"></div><div class="service-title">Content Audits</div><div class="service-desc">Full review of existing content — what ranks, what's close, what's hurting you, and exactly what to fix first.</div><div class="service-price">From $250 / audit</div></div>
+
+<section id="comparison">
+  <div class="container">
+    <div class="section-label">Why work with me</div>
+    <h2>The honest <em>comparison</em></h2>
+    <p class="section-intro">Most content teams are stuck choosing between expensive agencies and the slow process of hiring in-house. There's a better option.</p>
+    <div class="comparison-wrap">
+      <table class="comparison-table">
+        <thead><tr><th></th><th class="col-agency">Big Agency</th><th class="col-hire">In-House Writer</th><th class="col-elias">Elias Hubbard</th></tr></thead>
+        <tbody>
+          <tr><td>Monthly cost</td><td class="bad">$10,000–$22,000</td><td class="warn">$5,000–$7,500</td><td class="good">$5,000</td></tr>
+          <tr><td>Ramp time</td><td class="bad">4–6 weeks</td><td class="bad">2–3 months</td><td class="good">This week</td></tr>
+          <tr><td>Output</td><td class="warn">Shared across clients</td><td class="warn">One pace, one person</td><td class="good">AI-powered, high volume</td></tr>
+          <tr><td>Contract</td><td class="bad">3–6 month minimum</td><td class="bad">Permanent hire + benefits</td><td class="good">Month-to-month</td></tr>
+          <tr><td>Strategy included</td><td class="warn">Extra cost</td><td class="bad">Usually not</td><td class="good">Yes — every month</td></tr>
+          <tr><td>Direct communication</td><td class="bad">Through account manager</td><td class="good">Yes</td><td class="good">Same-day, always</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
-<section id="samples">
-  <div class="section-tag">Writing samples</div>
-  <h2>Recent work</h2>
-  <p class="section-lead">Published articles written to rank, educate, and convert — not just fill a content calendar.</p>
-  <div class="samples-grid">
-    <a class="sample-card" href="https://medium.com/p/5f8049064f5a" target="_blank"><div class="sample-thumb" style="background:#2c3e50">💤</div><div class="sample-body"><span class="sample-tag">Health & Wellness</span><div class="sample-title">The Sleep Science Most People Get Wrong (And What Actually Helps)</div><div class="sample-meta">Medium · 1,200 words · March 2026</div></div></a>
-    <a class="sample-card" href="https://medium.com/p/8852ef01e305" target="_blank"><div class="sample-thumb" style="background:#1a3c2a">✍️</div><div class="sample-body"><span class="sample-tag">Content Marketing</span><div class="sample-title">Why Your Business Blog Gets Zero Traffic (And the 3-Part Fix)</div><div class="sample-meta">Medium · 1,400 words · March 2026</div></div></a>
-    <a class="sample-card" href="#" target="_blank"><div class="sample-thumb" style="background:#3d1f00">🏠</div><div class="sample-body"><span class="sample-tag">Home Services SEO</span><div class="sample-title">How Much Does Window Replacement Cost in 2025?</div><div class="sample-meta">Sample · 1,800 words · Available on request</div></div></a>
-    <a class="sample-card" href="#" target="_blank"><div class="sample-thumb" style="background:#1c1c3a">⚡</div><div class="sample-body"><span class="sample-tag">B2B SaaS</span><div class="sample-title">The Content Strategy Framework That Actually Scales</div><div class="sample-meta">Sample · 2,000 words · Available on request</div></div></a>
+
+<div class="divider"></div>
+
+<section id="included">
+  <div class="container">
+    <div class="section-label">Retainer package</div>
+    <h2>Everything in one<br><em>$5,000/month</em> retainer</h2>
+    <p class="section-intro">No hourly tracking. No project-by-project negotiation. A fixed monthly system that compounds over time.</p>
+    <div class="price-hero" style="margin-top:2.5rem;"><span class="price-tag">$5,000</span><p class="price-sub">per month · month-to-month · starts this week</p></div>
+    <div class="deliverables-grid">
+      <div class="deliverable"><div class="del-icon">8</div><div><div class="del-title">Long-form SEO articles</div><div class="del-desc">1,500–2,500 words each. Fully researched, buyer-intent optimized, built to rank.</div></div></div>
+      <div class="deliverable"><div class="del-icon">8</div><div><div class="del-title">Short-form content</div><div class="del-desc">800–1,200 words. Product updates, thought leadership, case study summaries.</div></div></div>
+      <div class="deliverable"><div class="del-icon">2</div><div><div class="del-title">Email sequences</div><div class="del-desc">Up to 2 full sequences per month — welcome, nurture, or re-engagement.</div></div></div>
+      <div class="deliverable"><div class="del-icon">1</div><div><div class="del-title">Monthly strategy session</div><div class="del-desc">60-minute recorded call. Editorial calendar, topic ideation, performance review.</div></div></div>
+      <div class="deliverable"><div class="del-icon">∞</div><div><div class="del-title">Content briefs included</div><div class="del-desc">No prep work on your end. I build the brief, you approve in 5 minutes.</div></div></div>
+      <div class="deliverable"><div class="del-icon">✓</div><div><div class="del-title">One revision per piece</div><div class="del-desc">Most pieces publish on first draft. Revisions are fast and rare.</div></div></div>
+      <div class="deliverable"><div class="del-icon">📊</div><div><div class="del-title">Monthly performance report</div><div class="del-desc">Rankings, traffic movement, top performers. Clear ROI every month.</div></div></div>
+      <div class="deliverable"><div class="del-icon">💬</div><div><div class="del-title">Direct Slack/email channel</div><div class="del-desc">Same-day responses. No ticketing systems, no account managers.</div></div></div>
+    </div>
+    <div style="text-align:center;">
+      <a href="mailto:draconicdidi@gmail.com" class="btn-primary" style="font-size:1rem; padding:1rem 2.5rem;">Start with a free strategy call →</a>
+      <p style="margin-top:1rem; font-size:0.82rem; color:var(--white-dim);">First month available at $3,000 as a risk-free pilot. Full refund if you're not satisfied.</p>
+    </div>
   </div>
 </section>
-<section>
-  <div class="section-tag">How it works</div>
-  <h2>Simple process. No surprises.</h2>
-  <p class="section-lead">From brief to published in as little as 24 hours. No chasing. No rewrites from scratch.</p>
-  <div class="process-steps">
-    <div class="process-step"><div class="process-num">01</div><div class="process-title">You send a brief</div><div class="process-desc">Topic, keyword, audience, tone, word count. No brief? I ask two questions and build one.</div></div>
-    <div class="process-step"><div class="process-num">02</div><div class="process-title">I research & write</div><div class="process-desc">SERP analysis, competitor research, formatted first draft — delivered on time.</div></div>
-    <div class="process-step"><div class="process-num">03</div><div class="process-title">You review</div><div class="process-desc">One revision included. Most clients publish the first draft without changes.</div></div>
-    <div class="process-step"><div class="process-num">04</div><div class="process-title">Publish & repeat</div><div class="process-desc">Best clients stay on retainer. Content compounds — library grows every month.</div></div>
+
+<div class="divider"></div>
+
+<section id="process">
+  <div class="container">
+    <div class="section-label">How it works</div>
+    <h2>From brief to published<br>in <em>24–48 hours</em></h2>
+    <div class="process-steps">
+      <div class="step"><div class="step-num">01</div><div class="step-title">Strategy call</div><div class="step-desc">15 minutes. I learn your brand, ICP, and content goals. No prep needed.</div></div>
+      <div class="step"><div class="step-num">02</div><div class="step-title">I build the briefs</div><div class="step-desc">Keyword research, SERP analysis, internal link mapping. You approve in 5 minutes.</div></div>
+      <div class="step"><div class="step-num">03</div><div class="step-title">Drafts delivered</div><div class="step-desc">Fully formatted, on-brand articles in your CMS or Google Docs. On time, always.</div></div>
+      <div class="step"><div class="step-num">04</div><div class="step-title">Publish &amp; repeat</div><div class="step-desc">Content compounds month over month. I track performance and double down on what works.</div></div>
+    </div>
   </div>
 </section>
-<section id="pricing">
-  <div class="section-tag">Pricing</div>
-  <h2>Clear rates. No surprises.</h2>
-  <p class="section-lead">All projects include one revision round. Rush delivery available at 1.5x standard rate.</p>
-  <div class="pricing-grid">
-    <div class="pricing-card"><div class="pricing-tier">Starter</div><div class="pricing-price">$75</div><div class="pricing-unit">per article up to 1,000 words</div><ul class="pricing-features"><li>SEO-optimized structure</li><li>1 target keyword</li><li>Meta title & description</li><li>24-hour delivery</li><li>One revision</li></ul><a href="https://www.upwork.com/freelancers/~draconicdidi" class="btn-pricing" target="_blank">Get started</a></div>
-    <div class="pricing-card featured"><div class="pricing-badge">Most popular</div><div class="pricing-tier">Professional</div><div class="pricing-price">$150</div><div class="pricing-unit">per article up to 2,000 words</div><ul class="pricing-features"><li>Deep keyword research</li><li>SERP intent analysis</li><li>Internal link suggestions</li><li>Schema structure</li><li>24-48 hour delivery</li><li>One revision</li></ul><a href="https://www.upwork.com/freelancers/~draconicdidi" class="btn-pricing" target="_blank">Get started</a></div>
-    <div class="pricing-card"><div class="pricing-tier">Retainer</div><div class="pricing-price">$500</div><div class="pricing-unit">per month — 4 articles</div><ul class="pricing-features"><li>Everything in Professional</li><li>Monthly content calendar</li><li>Topic ideation</li><li>Priority turnaround</li><li>Dedicated Slack channel</li><li>Quarterly audit</li></ul><a href="https://www.upwork.com/freelancers/~draconicdidi" class="btn-pricing" target="_blank">Let's talk</a></div>
+
+<div class="divider"></div>
+
+<section id="work">
+  <div class="container">
+    <div class="section-label">Writing samples</div>
+    <h2>Recent work that <em>performs</em></h2>
+    <div class="samples-grid">
+      <a class="sample-card" href="https://medium.com/p/5f8049064f5a" target="_blank"><span class="sample-tag">Health &amp; Wellness</span><div class="sample-title">The Sleep Science Most People Get Wrong (And What Actually Helps)</div><div class="sample-meta">Medium · 1,200 words · March 2026</div></a>
+      <a class="sample-card" href="https://medium.com/p/8852ef01e305" target="_blank"><span class="sample-tag">Content Marketing</span><div class="sample-title">Why Your Business Blog Gets Zero Traffic (And the 3-Part Fix)</div><div class="sample-meta">Medium · 1,400 words · March 2026</div></a>
+      <a class="sample-card" href="mailto:draconicdidi@gmail.com"><span class="sample-tag">Home Services SEO</span><div class="sample-title">How Much Does Window Replacement Cost in 2025?</div><div class="sample-meta">1,800 words · Available on request</div></a>
+      <a class="sample-card" href="mailto:draconicdidi@gmail.com"><span class="sample-tag">B2B SaaS Strategy</span><div class="sample-title">The Content Strategy Framework That Actually Scales</div><div class="sample-meta">2,000 words · Available on request</div></a>
+    </div>
   </div>
 </section>
-<div class="testimonials">
-  <div class="testimonials-inner">
-    <div class="section-tag">What clients say</div>
-    <h2 style="color:var(--paper)">Built on results, not promises</h2>
-    <p class="section-lead">Testimonials from Upwork clients. More on my Upwork profile.</p>
+
+<div class="divider"></div>
+
+<section id="testimonials">
+  <div class="container">
+    <div class="section-label">What clients say</div>
+    <h2>Built on results,<br>not <em>promises</em></h2>
     <div class="testimonials-grid">
-      <div class="testimonial-card"><div class="testimonial-quote">"Elias delivered a clean, well-researched article on the first draft. Zero back-and-forth. Exactly what a busy team needs."</div><div class="testimonial-author"><div class="author-avatar">J</div><div><div class="author-name">James K.</div><div class="author-role">Home Services Agency · Upwork ⭐⭐⭐⭐⭐</div></div></div></div>
-      <div class="testimonial-card"><div class="testimonial-quote">"We've worked with a lot of writers. Elias understands SEO intent, not just keywords. Our rankings improved within 60 days."</div><div class="testimonial-author"><div class="author-avatar">S</div><div><div class="author-name">Sarah M.</div><div class="author-role">Marketing Director · Upwork ⭐⭐⭐⭐⭐</div></div></div></div>
-      <div class="testimonial-card"><div class="testimonial-quote">"Fast, reliable, asks the right questions upfront. Added him to our retainer after the first article."</div><div class="testimonial-author"><div class="author-avatar">M</div><div><div class="author-name">Mike T.</div><div class="author-role">SaaS Founder · Upwork ⭐⭐⭐⭐⭐</div></div></div></div>
+      <div class="testimonial"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Elias delivered a clean, well-researched article on the first draft. Zero back-and-forth. Exactly what a busy team needs."</p><div class="testimonial-author"><div class="author-avatar">JK</div><div><div class="author-name">James K.</div><div class="author-role">Home Services Agency</div></div></div></div>
+      <div class="testimonial"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"We've worked with a lot of writers. Elias understands SEO intent, not just keywords. Our rankings improved within 60 days."</p><div class="testimonial-author"><div class="author-avatar">SM</div><div><div class="author-name">Sarah M.</div><div class="author-role">Marketing Director, SaaS</div></div></div></div>
+      <div class="testimonial"><div class="testimonial-stars">★★★★★</div><p class="testimonial-text">"Fast, reliable, asks the right questions upfront. Added him to our retainer after the first article."</p><div class="testimonial-author"><div class="author-avatar">MT</div><div><div class="author-name">Mike T.</div><div class="author-role">Founder, B2B SaaS</div></div></div></div>
     </div>
   </div>
-</div>
-<div class="cta-strip" id="contact">
-  <h2>Ready to build content that actually works?</h2>
-  <p>Send me a brief or just say hello. I respond within 4 hours during business hours.</p>
-  <a href="https://www.upwork.com/freelancers/~draconicdidi" class="btn-white" target="_blank">Hire me on Upwork →</a>
-</div>
-<div style="background:var(--ink)">
-  <footer style="border-top-color:rgba(255,255,255,.1);color:rgba(255,255,255,.4)">
-    <span class="footer-name" style="color:var(--paper)">Elias Hubbard</span>
-    <div class="footer-links">
-      <a href="https://medium.com/@draconicdidi" style="color:rgba(255,255,255,.4)">Medium</a>
-      <a href="https://www.upwork.com/freelancers/~draconicdidi" style="color:rgba(255,255,255,.4)">Upwork</a>
+</section>
+
+<div class="divider"></div>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="section-label" style="text-align:center;">Ready to scale?</div>
+      <h2 style="text-align:center;">Let's build your<br><em>content engine</em></h2>
+      <p class="section-intro" style="margin:1rem auto; text-align:center; max-width:480px;">One 15-minute call. I'll audit a piece of your existing content live and show you exactly what I'd change. No pitch deck. No pressure.</p>
+      <div style="text-align:center;">
+        <a href="mailto:draconicdidi@gmail.com" class="btn-primary" style="font-size:1.05rem; padding:1.1rem 2.75rem; margin-top:0.5rem; display:inline-block;">draconicdidi@gmail.com →</a>
+        <p class="contact-note">I respond within 4 hours during business hours. Austin, TX (CT).</p>
+      </div>
     </div>
-    <span>© 2026 Elias Hubbard</span>
-  </footer>
-</div>
-</body></html>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-name">Elias Hubbard — AI Content Strategist</div>
+      <div class="footer-links">
+        <a href="https://medium.com/@draconicdidi" target="_blank">Medium</a>
+        <a href="https://www.upwork.com/freelancers/~draconicdidi" target="_blank">Upwork</a>
+        <a href="mailto:draconicdidi@gmail.com">Email</a>
+      </div>
+      <div style="font-size:0.78rem; color:var(--white-dim);">© 2026 Elias Hubbard</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
