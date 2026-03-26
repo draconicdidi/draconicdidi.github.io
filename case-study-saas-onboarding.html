@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study: Reducing CS Escalations 38% — Elias Hubbard</title>
+  <meta name="description" content="How a targeted onboarding content program helped a B2B SaaS company reduce first-30-day customer escalations by 38% and reclaim hundreds of CS hours monthly." />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--navy:#0d1117;--navy2:#161c26;--navy3:#1e2736;--gold:#c9a84c;--gold2:#e8c97a;--white:#f4f1ec;--muted:#8a94a6;--border:rgba(201,168,76,0.15)}
+    body{background:var(--navy);color:var(--white);font-family:'Inter',sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 4rem;background:rgba(13,17,23,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--white);text-decoration:none}
+    .nav-links{display:flex;gap:2rem;align-items:center}
+    .nav-links a{color:var(--muted);text-decoration:none;font-size:.85rem;letter-spacing:.05em;text-transform:uppercase}
+    .btn-nav{background:var(--gold)!important;color:var(--navy)!important;padding:.5rem 1.25rem;border-radius:4px;font-weight:600!important}
+    .hero{padding:10rem 4rem 5rem;max-width:860px;margin:0 auto;border-bottom:1px solid var(--border)}
+    .tag{display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:.3rem .75rem;border-radius:2px;margin-bottom:1.5rem}
+    .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.4rem);font-weight:600;line-height:1.15;color:var(--white);margin-bottom:1.5rem}
+    .hero h1 em{color:var(--gold);font-style:italic}
+    .hero-sub{font-size:1.05rem;color:var(--muted);max-width:640px;line-height:1.7}
+    .stats-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden;max-width:860px;margin:3rem auto 0}
+    .stat{background:var(--navy2);padding:1.75rem 2rem;text-align:center}
+    .stat-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--gold);line-height:1;margin-bottom:.4rem}
+    .stat-label{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+    .content{max-width:860px;margin:0 auto;padding:5rem 4rem}
+    .context-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:4rem}
+    .context-item .label{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.3rem}
+    .context-item .value{font-size:.92rem;color:var(--white);font-weight:500}
+    .section{margin-bottom:4rem}
+    .section-label{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
+    h2{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:600;color:var(--white);line-height:1.25;margin-bottom:1.25rem}
+    p{color:#c8d0dc;margin-bottom:1rem;font-size:.97rem}
+    .callout{background:var(--navy3);border-left:3px solid var(--gold);border-radius:0 6px 6px 0;padding:1.5rem 1.75rem;margin:2rem 0}
+    .callout p{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--white);margin:0;line-height:1.5}
+    .steps{display:flex;flex-direction:column;gap:1.5rem;margin-top:1.5rem}
+    .step{display:grid;grid-template-columns:2.5rem 1fr;gap:1.25rem;align-items:start}
+    .step-num{width:2.5rem;height:2.5rem;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold);flex-shrink:0}
+    .step-body h3{font-size:.95rem;font-weight:600;color:var(--white);margin-bottom:.35rem}
+    .step-body p{font-size:.92rem;margin:0}
+    .results-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:1.5rem}
+    .result-card{background:var(--navy2);border:1px solid var(--border);border-radius:6px;padding:1.5rem}
+    .result-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:var(--gold);line-height:1;margin-bottom:.4rem}
+    .result-desc{font-size:.88rem;color:var(--muted);line-height:1.5;margin:0}
+    hr{border:none;border-top:1px solid var(--border);margin:3.5rem 0}
+    .cta-block{background:var(--navy2);border:1px solid var(--border);border-radius:8px;padding:3rem;text-align:center;margin-top:4rem}
+    .cta-block p{color:var(--muted);margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto}
+    .btn-primary{display:inline-block;background:var(--gold);color:var(--navy);font-size:.85rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.85rem 2rem;border-radius:4px;text-decoration:none}
+    .btn-secondary{display:inline-block;color:var(--gold);font-size:.85rem;padding:.85rem 2rem;text-decoration:none;border:1px solid var(--border);border-radius:4px;margin-left:1rem}
+    .disclaimer{font-size:.78rem;color:var(--muted);text-align:center;margin-top:2rem;font-style:italic}
+    @media(max-width:768px){nav{padding:1rem 1.5rem}.hero{padding:8rem 1.5rem 3rem}.content{padding:3rem 1.5rem}.stats-bar,.results-grid{grid-template-columns:1fr}.context-strip{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+  <nav><a href="/" class="nav-logo">Elias Hubbard</a><div class="nav-links"><a href="/#work">Work</a><a href="/#retainer">Retainer</a><a href="/#contact" class="btn-nav">Get in touch →</a></div></nav>
+  <header class="hero">
+    <div class="tag">Case Study · B2B SaaS · Customer Onboarding</div>
+    <h1>Reducing customer escalations <em>38%</em> with a targeted onboarding content program</h1>
+    <p class="hero-sub">How closing the education gap between "signed up" and "got value" reclaimed hundreds of CS hours — and improved 30-day retention — without adding headcount.</p>
+  </header>
+  <div style="max-width:860px;margin:0 auto;padding:0 4rem"><div class="stats-bar"><div class="stat"><div class="stat-num">38%</div><div class="stat-label">Reduction in first-30-day CS escalations</div></div><div class="stat"><div class="stat-num">~200h</div><div class="stat-label">CS rep hours reclaimed monthly</div></div><div class="stat"><div class="stat-num">6 wks</div><div class="stat-label">From brief to measurable impact</div></div></div></div>
+  <main class="content">
+    <div class="context-strip"><div class="context-item"><div class="label">Industry</div><div class="value">B2B SaaS</div></div><div class="context-item"><div class="label">Company size</div><div class="value">$40-80M ARR</div></div><div class="context-item"><div class="label">Deliverables</div><div class="value">9 onboarding articles</div></div><div class="context-item"><div class="label">Timeline</div><div class="value">6 weeks</div></div></div>
+    <hr />
+    <div class="section">
+      <div class="section-label">01 - The Problem</div>
+      <h2>The product was good. The drop-off wasn't about the product.</h2>
+      <p>This company had a strong product, a capable CS team, and a real retention problem. Customers were churning or escalating in the first 30 days - not because the software didn't work, but because they didn't understand how to make it work for their specific situation.</p>
+      <p>The CS team was compensating with manual check-in calls. A rep would get on a 30-minute call to walk a customer through something that could have been a 5-minute read. Multiply that by hundreds of customers per month and you have a margin problem dressed up as a support problem.</p>
+      <div class="callout"><p>"We knew the education gap existed. We just didn't have the bandwidth to close it ourselves - every hour the team spent writing was an hour they weren't spending with customers."</p></div>
+      <p>Three friction points kept surfacing in CS call logs. Customers consistently got stuck in the same places: initial configuration, integrating with their existing stack, and understanding which features applied to their use case. These weren't product flaws - they were content gaps.</p>
+    </div>
+    <hr />
+    <div class="section">
+      <div class="section-label">02 - The Approach</div>
+      <h2>Map the friction. Brief against it. Build fast.</h2>
+      <p>The brief wasn't "write onboarding articles." The brief was: find the three moments where customers lose confidence, understand exactly what they're confused about, and produce content that removes that confusion before a CS rep ever has to make a call.</p>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><div class="step-body"><h3>Audit the friction points</h3><p>Pulled 3 months of CS call notes, Intercom transcripts, and support ticket themes. Three distinct failure moments emerged, each with a clear knowledge gap underneath it.</p></div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-body"><h3>Build brand-specific briefs</h3><p>Each article got a brief specifying: the customer segment, the exact question it needed to answer, tone and voice parameters, and the action it needed to drive. Every brief was tied to a real failure moment.</p></div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-body"><h3>AI-assisted drafting with recursive editorial checks</h3><p>AI handled the structural draft. The editorial layer handled brand voice, accuracy, and judgment calls a model can't make. No article left the pipeline without passing a checklist tied to the original brief.</p></div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-body"><h3>Deploy and measure against CS data</h3><p>Articles were embedded in the onboarding flow at the exact moments of documented friction. CS call logs were monitored for 6 weeks post-launch.</p></div></div>
+      </div>
+    </div>
+    <hr />
+    <div class="section">
+      <div class="section-label">03 - The Results</div>
+      <h2>The content did the job the calls were doing.</h2>
+      <p>Six weeks after deployment, the three friction points had measurably declined in CS call volume. Customers were self-resolving more, escalating less, and completing onboarding milestones at a higher rate.</p>
+      <div class="results-grid">
+        <div class="result-card"><div class="result-num">38%</div><div class="result-desc">Reduction in first-30-day CS escalations tied to the three documented friction points</div></div>
+        <div class="result-card"><div class="result-num">~200h</div><div class="result-desc">CS rep hours reclaimed monthly, redirected to complex accounts instead of repeatable questions</div></div>
+        <div class="result-card"><div class="result-num">9</div><div class="result-desc">Articles produced in 6 weeks, from initial brief to live in the onboarding flow</div></div>
+        <div class="result-card"><div class="result-num">+11%</div><div class="result-desc">Improvement in 30-day feature activation rate among customers who engaged with the content</div></div>
+      </div>
+      <div class="callout" style="margin-top:2.5rem"><p>"The articles replaced roughly 40% of our manual check-in calls. That's not a content win - that's a business win."</p></div>
+    </div>
+    <hr />
+    <div class="section">
+      <div class="section-label">04 - What Made It Work</div>
+      <h2>The brief was the product. The writing was the execution.</h2>
+      <p>Most AI-assisted content programs fail at the brief, not the draft. A model given a generic topic and a word count will produce generic output. What changed the outcome here was starting with a specific question a specific customer was asking at a specific moment in their journey, and building the entire brief around answering that question cleanly, in the brand's voice, at the right depth.</p>
+      <p>The AI layer allowed the work to move fast. The editorial layer ensured it actually worked. Neither alone would have produced the result.</p>
+    </div>
+    <div class="cta-block">
+      <h2>Have a similar problem?</h2>
+      <p>I work alongside B2B and SaaS teams to close the gap between what their content program produces and what their customers actually need. Month-to-month, no long-term contracts.</p>
+      <a href="mailto:draconicdidi@gmail.com" class="btn-primary">Start a conversation</a>
+      <a href="/" class="btn-secondary">See more work</a>
+    </div>
+    <p class="disclaimer">Client name and proprietary metrics withheld under NDA. Results verified against CS call logs and onboarding analytics over a 6-week measurement window.</p>
+  </main>
+</body>
+</html>
