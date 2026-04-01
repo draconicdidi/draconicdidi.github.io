@@ -2827,6 +2827,44 @@ function filterRankings(cat, el) {
   }).join('');
 }
 
+
+// ── LIVE API RANKINGS ──────────────────────────────────
+(async function loadLiveRankings() {
+  const API = 'https://nayna-backend-production.up.railway.app';
+  const profMap = { lash: 'lash', hair: 'hair', nail: 'nail', brow: 'brow' };
+  try {
+    const resp = await fetch(`${API}/artists/rankings?limit=20`);
+    if (!resp.ok) return;
+    const data = await resp.json();
+    if (!Array.isArray(data) || data.length === 0) return;
+    // Group by profession
+    const grouped = {};
+    for (const a of data) {
+      const cat = profMap[a.profession] || a.profession;
+      if (!grouped[cat]) grouped[cat] = [];
+      grouped[cat].push({
+        name: a.display_name || 'Artist',
+        studio: (a.studio_name || 'Austin Studio') + ' · Austin',
+        score: (a.nayna_score || 0).toFixed(1),
+        verified: a.review_count || 0,
+        friends: 0,
+        rank: grouped[cat].length + 1,
+        trend: '+0.0'
+      });
+    }
+    // Merge into RANKINGS_DATA
+    Object.assign(RANKINGS_DATA, grouped);
+    // Refresh current view
+    const activePill = document.querySelector('[onclick^="filterRankings"][style*="fff"]');
+    const activeCat = activePill?.dataset?.cat || 'lash';
+    filterRankings(activeCat, activePill);
+    console.log('[Nayna] Live rankings loaded:', Object.keys(grouped).map(k => k+':'+grouped[k].length).join(', '));
+  } catch(e) {
+    console.log('[Nayna] Using demo rankings (API unavailable)');
+  }
+})();
+// ─────────────────────────────────────────────────────────
+
 // ── FOLLOW TOGGLE ────────────────────────────────────────
 function toggleFollow(btn) {
   const isFollowing = btn.dataset.following === 'true';
